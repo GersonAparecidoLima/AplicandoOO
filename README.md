@@ -7,4 +7,4 @@ Estou muito feliz em compartilhar que conquistei meu certificado no curso de C#:
 
 # Certificado
 
-Você pode acessar o [Certificado aqui](certificado/certificado.PNG)
+Você pode acessar o [Certificado aqui](ScreenSound/certificado/certificado.PNG)

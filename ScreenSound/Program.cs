@@ -1,26 +1,34 @@
-﻿Musica musica1 = new Musica();
-musica1.Nome = "Faz Chover";
-musica1.Artista = "Fernando";
-musica1.Duracao = 273;
-musica1.Disponivel =  true;
-Console.WriteLine(musica1.DescricaoResumida);
+﻿//Album albumDoFernandinho = new Album();
+//albumDoFernandinho.Nome = "Faz Chover";
+
+//Musica musica1 = new Musica();
+//musica1.Nome = "Uma nova Historia";
+//musica1.Duracao = 213;
+
+//Musica musica2 = new Musica();
+//musica2.Nome = "Pequena nuvem";
+//musica2.Duracao = 354;
+
+//albumDoFernandinho.AdicionarMusica(musica1);
+//albumDoFernandinho.AdicionarMusica(musica2);
 
 
+Album albumDoFernandinho = new Album();
+albumDoFernandinho.Nome = "Faz Chover";
 
+Musica musica1 = new Musica();
+musica1.Nome = "Uma nova Historia";
+musica1.Duracao = 213;
 
 Musica musica2 = new Musica();
-musica2.Nome = "Com muito louvor";
-musica2.Artista = "Casiane";
-musica2.Duracao = 367;
-musica2.Disponivel = false;
-Console.WriteLine(musica2.DescricaoResumida);
+musica2.Nome = "Pequena nuvem";
+musica2.Duracao = 354;
 
-/*
-Console.WriteLine($"Nome da música : {musica1.nome}");
-Console.WriteLine($"Nome da música : {musica1.artista}");
-Console.WriteLine($"Nome da música : {musica2.nome}");
-Console.WriteLine($"Nome da música : {musica2.artista}");
-*/
+albumDoFernandinho.AdicionarMusica(musica1);
+albumDoFernandinho.AdicionarMusica(musica2);
 
-musica1.ExibirFichaTecnica();
-musica2.ExibirFichaTecnica();
+albumDoFernandinho.ExibirMusicasDoAlbum();
+
+// Manter o console aberto após a execução
+Console.WriteLine("Pressione qualquer tecla para sair...");
+Console.ReadLine();

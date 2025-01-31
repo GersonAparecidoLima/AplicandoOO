@@ -1,34 +1,24 @@
-﻿//Album albumDoFernandinho = new Album();
-//albumDoFernandinho.Nome = "Faz Chover";
+﻿Banda fernadinho = new Banda("Fernandinho");
 
-//Musica musica1 = new Musica();
-//musica1.Nome = "Uma nova Historia";
-//musica1.Duracao = 213;
+Album albumDoFernadinho = new Album("Faz chover");
 
-//Musica musica2 = new Musica();
-//musica2.Nome = "Pequena nuvem";
-//musica2.Duracao = 354;
+Musica musica1 = new Musica(fernadinho, "pequena nuvel")
+{
+    Duracao = 213,
+    Disponivel = true,
+};
 
-//albumDoFernandinho.AdicionarMusica(musica1);
-//albumDoFernandinho.AdicionarMusica(musica2);
+Musica musica2 = new Musica(fernadinho, "Uma nova  historia")
+{
+    Duracao = 354,
+    Disponivel = false,
+};
 
+albumDoFernadinho.AdicionarMusica(musica1);
+albumDoFernadinho.AdicionarMusica(musica2);
+fernadinho.AdicionarAlbum(albumDoFernadinho);
 
-Album albumDoFernandinho = new Album();
-albumDoFernandinho.Nome = "Faz Chover";
-
-Musica musica1 = new Musica();
-musica1.Nome = "Uma nova Historia";
-musica1.Duracao = 213;
-
-Musica musica2 = new Musica();
-musica2.Nome = "Pequena nuvem";
-musica2.Duracao = 354;
-
-albumDoFernandinho.AdicionarMusica(musica1);
-albumDoFernandinho.AdicionarMusica(musica2);
-
-albumDoFernandinho.ExibirMusicasDoAlbum();
-
-// Manter o console aberto após a execução
-Console.WriteLine("Pressione qualquer tecla para sair...");
-Console.ReadLine();
+musica1.ExibirFichaTecnica();
+musica2.ExibirFichaTecnica();
+albumDoFernadinho.ExibirMusicasDoAlbum();
+fernadinho.ExibirDiscografia();

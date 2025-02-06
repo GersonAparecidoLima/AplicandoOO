@@ -7,5 +7,5 @@ Estou muito feliz em compartilhar que conquistei meu certificado no curso de C#:
 
 # Certificado
 
-Você pode acessar o [Certificado aqui](ScreenSound/certificado/certificado.PNG)
-![Certificado](https://github.com/GersonAparecidoLima/AplicandoOO/tree/master/ScreenSound/certificado/certificado.PNG)
+![Certificado](https://github.com/GersonAparecidoLima/AplicandoOO/raw/master/ScreenSound/certificado/certificado.PNG)
+
